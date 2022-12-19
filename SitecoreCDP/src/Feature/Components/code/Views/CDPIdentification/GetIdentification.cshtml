@@ -1,0 +1,33 @@
+﻿@model SitecoreCDP.Feature.Components.Models.VisitorInformation
+
+@using (Html.BeginForm())
+{
+<div>
+    <div class="mb-3">
+        <label for="@Model.FullName" class="form-label">Full Name</label>
+        <input type="text" id="textFullName" class="form-control" value="@Model.FullName">
+    </div>
+    <div class="mb-3">
+        <label for="@Model.Gender" class="form-label">Gender</label>
+        <input type="text" id="textGender" class="form-control" value="@Model.Gender">
+    </div>
+    <div class="mb-3">
+        <label for="@Model.Nationality" class="form-label">Nationality</label>
+        <input type="text" id="textNationality" class="form-control" value="@Model.Nationality">
+    </div>
+    <div class="mb-3">
+        <label for="@Model.DOB" class="form-label">Date of Birth</label>
+        <input type="text" id="textDOB" class="form-control" value="@Model.DOB">
+    </div>
+    <div class="mb-3">
+        <label for="@Model.Email" class="form-label">Email</label>
+        <input type="text" id="textEmail" class="form-control" value="@Model.Email">
+    </div>
+    <div class="mb-3">
+        <label for="@Model.PhoneNo" class="form-label">PhoneNo</label>
+        <input type="text" id="textPhoneNo" class="form-control" value="@Model.PhoneNo">
+    </div>
+    <div class="mb-3">
+        <input type="button" class="form-control btn btn-primary" value="Submit" id="btnSubmitIdentityForm">
+    </div>
+</div>}
