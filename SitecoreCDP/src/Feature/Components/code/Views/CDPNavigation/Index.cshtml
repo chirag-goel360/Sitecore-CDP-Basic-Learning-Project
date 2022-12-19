@@ -1,0 +1,38 @@
+﻿@model SitecoreCDP.Feature.Components.Models.MainNavigationModel
+
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="@Model.HomeNavigationUrl">@Model.HomeTitle</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                @foreach (var mainNavigation in Model.MainLinks)
+                {
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="@mainNavigation.NavigationURL">@mainNavigation.NavigationTitle</a>
+                        @if (mainNavigation.SubNavigationItems.Count > 0)
+                        {
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="list-group-item list-group-item-action list-group-item-primary" href="@mainNavigation.NavigationURL">@mainNavigation.NavigationTitle</a>
+                                </li>
+                                @foreach (var subNavigation in mainNavigation.SubNavigationItems)
+                                {
+                                    <li>
+                                        <a class="dropdown-item" href="@subNavigation.SubNavigationURL">@subNavigation.SubNavigationTitle</a>
+                                    </li>
+                                }
+                            </ul>
+                        }
+                    </li>
+                 }
+            </ul>
+        </div>
+    </div>
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</nav>
