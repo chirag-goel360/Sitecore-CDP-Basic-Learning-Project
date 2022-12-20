@@ -1,0 +1,43 @@
+﻿<div class="position-relative">
+    <div class="position-absolute">
+        <br />
+        <br />
+        <div class="card" style="text-align: center;">
+            @Html.Sitecore().Field("ContentMainImage")
+            <div class="card-body">
+                <input type="hidden" id="pageInfoHidden" name="pageInfoHidden" value=@Html.Sitecore().Field("__Display Name") />
+                <h1 class="card-title">@Html.Sitecore().Field("Heading")</h1>
+                <p class="card-text">@Html.Sitecore().Field("BriefInfo")</p>
+            </div>
+            @Html.Sitecore().Field("MainContent")
+            <div class="card-body">
+                <a href="#" class="card-link"></a>
+                <a href="#" class="card-link"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    window.onload = function () {
+        triggerEventOnView();
+    };
+
+    function triggerEventOnView() {
+        _boxeverq.push(
+            function () {
+                var viewEvent = {
+                    "channel": "WEB",
+                    "type": "VIEW",
+                    "language": "EN",
+                    "currency": "USD",
+                    "page": document.getElementById('pageInfoHidden').value,
+                    "pos": window._boxever_settings.pointOfSale,
+                    "browser_id": Boxever.getID()
+                }
+                viewEvent = Boxever.addUTMParams(viewEvent);
+                Boxever.eventCreate(viewEvent, function (data) { }, 'json');
+            }
+        );
+    }
+</script>

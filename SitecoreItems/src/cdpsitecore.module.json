@@ -18,6 +18,10 @@
 		{
 			"name": "Placeholder Settings",
 			"path": "/sitecore/layout/Placeholder Settings/Project/cdpsitecore"
+		},
+		{
+			"name": "Renderings",
+			"path": "/sitecore/layout/Renderings/Project/cdpsitecore"
 		}
 		]
 	}

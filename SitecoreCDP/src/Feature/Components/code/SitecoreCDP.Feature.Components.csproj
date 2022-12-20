@@ -258,6 +258,7 @@
   <ItemGroup>
     <Compile Include="Controllers\CDPIdentificationController.cs" />
     <Compile Include="Controllers\CDPNavigationController.cs" />
+    <Compile Include="Controllers\PageContentController.cs" />
     <Compile Include="Models\MainLinkItems.cs" />
     <Compile Include="Models\MainNavigationModel.cs" />
     <Compile Include="Models\SubLink.cs" />
@@ -275,6 +276,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Views\PageContent\Index.cshtml" />
     <None Include="web.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
