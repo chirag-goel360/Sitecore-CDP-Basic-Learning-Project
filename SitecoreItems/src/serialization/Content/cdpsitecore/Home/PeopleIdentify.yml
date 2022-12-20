@@ -1,0 +1,49 @@
+﻿---
+ID: "d4e36d24-0af8-462c-bfe8-d84fd43f11c1"
+Parent: "1147e60a-6abc-4a8f-af14-833361b559c0"
+Template: "4b4af3f4-87df-478d-bbd9-2bc715c86ecd"
+Path: /sitecore/content/cdpsitecore/Home/PeopleIdentify
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: People Identify
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221220T122619Z
+    - ID: "450cfc60-6408-45c6-8cb0-2c38ceafd5a8"
+      Hint: BriefInfo
+      Value: |
+        A guest is any person that interacts with your brand, regardless of whether they are identified.
+        
+        The guest is the core entity of Sitecore Customer Data Platform (CDP). Each guest has a unique guest profile that contains all relevant transactional and behavioral data that is sent to the platform through Sitecore CDP APIs.
+        
+        The data available in the guest profile depends on your organization's requirements and identity rules. Sitecore CDP refers to the process of identifying guests as identity resolution.
+    - ID: "51c62ac0-ed76-44cc-b23b-349e4e2b8129"
+      Hint: ContentMainImage
+      Value: |
+        <image mediaid="{F17E12E4-C262-4F18-9E37-A7A340DBC6D8}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d695b7b3-bf53-4f43-8d73-9455250e1c76"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c9706ac7-9363-4040-9743-aa59938d092f"
+      Hint: Heading
+      Value: People Identify
+    - ID: "cdec7c0d-816e-49eb-99b7-2043bb65f05a"
+      Hint: MainContent
+      Value: |
+        <p>The General Data Protection Regulation (GDPR) is a regulation in EU law on data protection and privacy for all individuals within the European Union. This regulation also addresses the export of personal data outside the EU.</p>
+        <p>This guide can be used as a GDPR compliance reference, by organizations that use the <a href="https://doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-0/en/introduction-to-sitecore-cdp-2-0-data-model.html">Sitecore CDP 2.0 data model</a>. If you have questions about which data model version your organization uses, please contact your Sitecore Account Manager.</p>
+        <p>Sitecore CDP provides a complete view of your customer base using algorithms to build detailed customer profiles from behavioral and transactional data points, captured from online and offline data sources. To ensure the data is available for real-time personalization, the platform produces views of the data at different speeds giving eventual consistency.</p>
+        <p>Sitecore CDP is not designed to be a compliance tool or central consent hub that manages consent for other marketing or operational systems. Any organizations using Sitecore CDP to orchestrate consent or meet compliance across the marketing stack do so at their own risk and Sitecore accepts no responsibility for the performance of Sitecore CDP used for this purpose.</p>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20221220T122919Z

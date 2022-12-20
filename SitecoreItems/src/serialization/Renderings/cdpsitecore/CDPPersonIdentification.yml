@@ -1,27 +1,27 @@
 ﻿---
-ID: "530e13a2-c150-45d9-bc4a-da269aa5cb48"
+ID: "6b94ada1-90f4-40c3-b19a-868c7080bd8b"
 Parent: "34e973ce-b416-4024-b219-b95cf242dfb7"
 Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
-Path: /sitecore/layout/Renderings/Project/cdpsitecore/CDPPageContent
+Path: /sitecore/layout/Renderings/Project/cdpsitecore/CDPPersonIdentification
 SharedFields:
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
-  Value: Index
+  Value: GetIdentification
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: SitecoreCDP.Feature.Components.Controllers.PageContentController, SitecoreCDP.Feature.Components
+  Value: SitecoreCDP.Feature.Components.Controllers.CDPIdentificationController, SitecoreCDP.Feature.Components
 Languages:
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: CDP Page Content
+    Value: CDP Person Identification
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20221220T094839Z
+      Value: 20221220T121904Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -32,11 +32,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1b557ad2-cb51-4307-864f-5adb9f7ffa5b"
+      Value: "47ce4aa5-803f-4118-b532-7712f950096b"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20221220T122019Z
+      Value: 20221220T122056Z

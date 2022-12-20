@@ -1,0 +1,41 @@
+﻿---
+ID: "b2024c56-10ed-4a25-ae09-60afe3fe40de"
+Parent: "cb0e0e0d-fb70-46d4-8837-383f59adb97b"
+Template: "cb0e0e0d-fb70-46d4-8837-383f59adb97b"
+Path: /sitecore/templates/Project/cdpsitecore/PersonIdentification/__Standard Values
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{75954AE7-F8AA-458E-A109-D61E9D76A622}">
+        <r
+          id="{48F0FB59-9077-4425-A05B-5C7CA2512792}"
+          ph="cdp-main"
+          uid="{3989CC3D-A5DD-4445-B8BD-A96EE62D98D7}" />
+        <r
+          id="{6B94ADA1-90F4-40C3-B19A-868C7080BD8B}"
+          ph="cdp-main"
+          uid="{C515BB00-EDC5-4017-A6A5-554DB83C1DB0}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221220T121710Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "72d956e5-33fe-4047-b600-b14311993a2e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20221220T122422Z
