@@ -3,6 +3,15 @@ ID: "1147e60a-6abc-4a8f-af14-833361b559c0"
 Parent: "86d13072-616b-40d6-b16e-477709124c93"
 Template: "dc6d8f3f-2b6a-48ad-8535-b78bc31306cf"
 Path: /sitecore/content/cdpsitecore/Home
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{75954AE7-F8AA-458E-A109-D61E9D76A622}" />
+    </r>
 Languages:
 - Language: en
   Fields:
@@ -25,11 +34,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "5e07a6ba-ed75-425c-8bc1-edc5a935f374"
+      Value: "e7f29013-8b8a-4021-ab7c-a8ece1fd55d0"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20221219T082721Z
+      Value: 20221220T085112Z

@@ -10,6 +10,14 @@
 		{
 			"name": "Templates",
 			"path": "/sitecore/templates/Project/cdpsitecore"
+		},
+		{
+			"name": "Layout",
+			"path": "/sitecore/layout/Layouts/Project/cdpsitecore"
+		},
+		{
+			"name": "Placeholder Settings",
+			"path": "/sitecore/layout/Placeholder Settings/Project/cdpsitecore"
 		}
 		]
 	}
