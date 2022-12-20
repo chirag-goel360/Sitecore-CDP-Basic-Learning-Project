@@ -1,5 +1,5 @@
 ﻿<div class="position-relative">
-    <div class="position-absolute">
+    <div>
         <br />
         <br />
         <div class="card">
@@ -8,9 +8,11 @@
                 <div class="card-body">
                     <input type="hidden" id="pageInfoHidden" name="pageInfoHidden" value=@Html.Sitecore().Field("__Display Name") />
                     <h1 class="card-title">@Html.Sitecore().Field("Heading")</h1>
-                    <p class="card-text">@Html.Sitecore().Field("BriefInfo")</p>
+                    <p style="text-align: left;" class="card-text">@Html.Sitecore().Field("BriefInfo")</p>
                 </div>
-                @Html.Sitecore().Field("MainContent")
+                <div style="text-align: left;">
+                    @Html.Sitecore().Field("MainContent")
+                </div>
                 <div class="card-body">
                     <a href="#" class="card-link"></a>
                     <a href="#" class="card-link"></a>
