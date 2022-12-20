@@ -1,0 +1,41 @@
+﻿---
+ID: "9b43c871-929e-4103-bc6f-8ffa9345ad55"
+Parent: "b1a5cbaf-99e0-40c8-8666-908e7298c3af"
+Template: "4b4af3f4-87df-478d-bbd9-2bc715c86ecd"
+Path: /sitecore/content/cdpsitecore/Home/LearningPlan/DataModelLearning
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Data Model Learning
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221220T103516Z
+    - ID: "450cfc60-6408-45c6-8cb0-2c38ceafd5a8"
+      Hint: BriefInfo
+      Value: Sitecore CDP ingests, connects, and activates all your data across your full technology stack to power decisioning, experimentation, and personalization.
+    - ID: "51c62ac0-ed76-44cc-b23b-349e4e2b8129"
+      Hint: ContentMainImage
+      Value: |
+        <image mediaid="{1F3F86E7-E7A5-4AD4-906D-782DC3B69358}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "64c08a51-f320-4a7d-bd72-93518e6812a5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c9706ac7-9363-4040-9743-aa59938d092f"
+      Hint: Heading
+      Value: Data Model Learning
+    - ID: "cdec7c0d-816e-49eb-99b7-2043bb65f05a"
+      Hint: MainContent
+      Value: |
+        <span>Start learning Sitecore Personalize from <a href="https://doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/introduction-to-sitecore-cdp-2-1-data-model.html">Here.</a></span>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20221220T112513Z

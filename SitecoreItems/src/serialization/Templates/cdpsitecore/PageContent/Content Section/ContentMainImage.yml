@@ -12,6 +12,10 @@ SharedFields:
   Value: 300
 Languages:
 - Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Content Main Image
   Versions:
   - Version: 1
     Fields:
@@ -28,11 +32,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "96fb6b44-f6bc-4115-8406-be2b1f11a3ab"
+      Value: "d3f8267d-4170-4729-8e68-dba7f009ff01"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20221220T094728Z
+      Value: 20221220T104637Z

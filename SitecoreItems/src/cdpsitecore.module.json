@@ -22,6 +22,10 @@
 		{
 			"name": "Renderings",
 			"path": "/sitecore/layout/Renderings/Project/cdpsitecore"
+		},
+		{
+			"name": "Media",
+			"path": "/sitecore/media library/Project/cdpsitecore"
 		}
 		]
 	}

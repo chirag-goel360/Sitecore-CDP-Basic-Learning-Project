@@ -2,17 +2,19 @@
     <div class="position-absolute">
         <br />
         <br />
-        <div class="card" style="text-align: center;">
-            @Html.Sitecore().Field("ContentMainImage")
-            <div class="card-body">
-                <input type="hidden" id="pageInfoHidden" name="pageInfoHidden" value=@Html.Sitecore().Field("__Display Name") />
-                <h1 class="card-title">@Html.Sitecore().Field("Heading")</h1>
-                <p class="card-text">@Html.Sitecore().Field("BriefInfo")</p>
-            </div>
-            @Html.Sitecore().Field("MainContent")
-            <div class="card-body">
-                <a href="#" class="card-link"></a>
-                <a href="#" class="card-link"></a>
+        <div class="card">
+            <div style="text-align: center;">
+                @Html.Sitecore().Field("ContentMainImage")
+                <div class="card-body">
+                    <input type="hidden" id="pageInfoHidden" name="pageInfoHidden" value=@Html.Sitecore().Field("__Display Name") />
+                    <h1 class="card-title">@Html.Sitecore().Field("Heading")</h1>
+                    <p class="card-text">@Html.Sitecore().Field("BriefInfo")</p>
+                </div>
+                @Html.Sitecore().Field("MainContent")
+                <div class="card-body">
+                    <a href="#" class="card-link"></a>
+                    <a href="#" class="card-link"></a>
+                </div>
             </div>
         </div>
     </div>

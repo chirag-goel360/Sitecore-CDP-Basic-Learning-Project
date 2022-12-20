@@ -12,6 +12,10 @@ SharedFields:
   Value: SitecoreCDP.Feature.Components.Controllers.PageContentController,SitecoreCDP.Feature.Components
 Languages:
 - Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: CDP Page Content
   Versions:
   - Version: 1
     Fields:
@@ -28,11 +32,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "813376a1-1643-41fc-b101-dd0d161dfe06"
+      Value: "04476b10-f2dc-4e26-b9f0-95a85c44cd0d"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20221220T100724Z
+      Value: 20221220T104805Z

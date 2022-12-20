@@ -1,0 +1,44 @@
+﻿---
+ID: "b1a5cbaf-99e0-40c8-8666-908e7298c3af"
+Parent: "1147e60a-6abc-4a8f-af14-833361b559c0"
+Template: "4b4af3f4-87df-478d-bbd9-2bc715c86ecd"
+Path: /sitecore/content/cdpsitecore/Home/LearningPlan
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Learning Plan
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221220T103327Z
+    - ID: "450cfc60-6408-45c6-8cb0-2c38ceafd5a8"
+      Hint: BriefInfo
+      Value: |
+        To learn CDP you must follow
+        CDP Learning
+        Data Model Learning
+        Personalize Learning
+    - ID: "51c62ac0-ed76-44cc-b23b-349e4e2b8129"
+      Hint: ContentMainImage
+      Value: |
+        <image mediaid="{F17E12E4-C262-4F18-9E37-A7A340DBC6D8}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9eb30aa7-bd1f-45fe-b7f3-a62b455b082f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c9706ac7-9363-4040-9743-aa59938d092f"
+      Hint: Heading
+      Value: Learning Plan
+    - ID: "cdec7c0d-816e-49eb-99b7-2043bb65f05a"
+      Hint: MainContent
+      Value: "<span>Sitecore CDP consists of two products: Sitecore CDP &amp; Sitecore Personalize. Depending on the client&rsquo;s requirements they can opt to have either of the product or both. This will determine which features your client will have access to within the CDP platform.</span>"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20221220T110039Z
