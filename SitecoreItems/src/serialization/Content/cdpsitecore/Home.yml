@@ -15,6 +15,10 @@ SharedFields:
           id="{48F0FB59-9077-4425-A05B-5C7CA2512792}"
           ph="cdp-main"
           uid="{E90CB47A-DBBE-4AD9-8F47-6AF1650FB972}" />
+        <r
+          id="{530E13A2-C150-45D9-BC4A-DA269AA5CB48}"
+          ph="cdp-main"
+          uid="{C3738633-2EE7-46A3-8FB0-F3BDFE5EDB25}" />
       </d>
     </r>
 Languages:
@@ -29,6 +33,13 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20221219T082702Z
+    - ID: "450cfc60-6408-45c6-8cb0-2c38ceafd5a8"
+      Hint: BriefInfo
+      Value: Sitecore CDP enables you to query and build custom segments at scale and speed using any attributes that your organization passes to Sitecore CDP. You can interrogate all your organization’s data using embedded analytics in the segment editor. Sitecore batch segmentation enables you to target specific guests for paid media and email campaigns.
+    - ID: "51c62ac0-ed76-44cc-b23b-349e4e2b8129"
+      Hint: ContentMainImage
+      Value: |
+        <image mediaid="{F17E12E4-C262-4F18-9E37-A7A340DBC6D8}" />
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -39,11 +50,30 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "beaeabe2-ad64-4747-8814-eb9b22730321"
+      Value: "12c217ea-2230-4d6d-8a13-04a2392580f1"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
+    - ID: "c9706ac7-9363-4040-9743-aa59938d092f"
+      Hint: Heading
+      Value: Home Page
+    - ID: "cdec7c0d-816e-49eb-99b7-2043bb65f05a"
+      Hint: MainContent
+      Value: |
+        <h2>What is a Customer Data Platform?</h2>
+        <div>
+        <p>To start, let&rsquo;s take a look at the Customer Data Platform Institute&rsquo;s definition:</p>
+        <p>"A Customer Data Platform is packaged software that creates a persistent, unified customer database that is accessible to other systems".</p>
+        <p>They break it down as follows:</p>
+        <ul>
+            <li>"Packaged software": the CDP is a prebuilt system that is configured to meet the needs of each client. Some technical resources will be required to set up and maintain the CDP, but it does not require the level of technical skill of a typical data warehouse project. This reduces the time, cost, and risk and gives business users more control over the system, even though they may still need some technical assistance.</li>
+            <li>"Creates a persistent, unified customer database": the CDP creates a comprehensive view of each customer by capturing data from multiple systems, linking information related to the same customer, and storing the information to track behavior over time. The CDP contains personal identifiers used to target marketing messages and track individual-level marketing results.</li>
+            <li>"Accessible to other systems": data stored in the CDP can be used by other systems for analysis and to manage customer interactions.</li>
+        </ul>
+        <p>This definition paints the CDP as a dynamic multi-tasker, tirelessly working behind the scenes to manage, process, and convert data into meaningful customer experiences. But, as <a rel="noopener noreferrer" href="https://chiefmartec.com/2017/01/everything-marketer-needs-know-cdps-wait-whats-cdp/" target="_blank">David Raab</a>, head of CDP Institute points out, not all CDPs are created equally. Differences that exist between CDP products include: the types of data they ingest, how they unify customer identities, the support they provide for real-time updates and queries, and ancillary capabilities such as machine learning, segmentation, message selection, and campaign management.</p>
+        <p>As we&rsquo;ll see, the CDP has been evolving for some time, refining and improving its processes to meet (and exceed) the ever-changing expectations of customers.</p>
+        </div>
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20221220T091519Z
+      Value: 20221221T113432Z

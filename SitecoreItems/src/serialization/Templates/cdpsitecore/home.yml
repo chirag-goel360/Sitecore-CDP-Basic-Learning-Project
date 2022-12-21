@@ -9,7 +9,9 @@ SharedFields:
   Value: Network/16x16/home.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
-  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {4B4AF3F4-87DF-478D-BBD9-2BC715C86ECD}
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
   Value: "{0E48EA62-E162-44A6-946F-FE236BAF52D9}"
@@ -31,11 +33,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "17be59e9-6bea-4101-9f28-10c254e02ddf"
+      Value: "043361af-1903-4e1a-8d33-82b934abd21c"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20221220T103240Z
+      Value: 20221221T113056Z
