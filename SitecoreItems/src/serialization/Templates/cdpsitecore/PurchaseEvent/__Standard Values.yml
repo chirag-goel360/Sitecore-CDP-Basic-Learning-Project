@@ -1,14 +1,9 @@
 ﻿---
-ID: "0c8fffe3-fc47-4873-851b-ce4fc472daae"
-Parent: "4b4af3f4-87df-478d-bbd9-2bc715c86ecd"
-Template: "4b4af3f4-87df-478d-bbd9-2bc715c86ecd"
-Path: /sitecore/templates/Project/cdpsitecore/PageContent/__Standard Values
+ID: "c36f95ba-42f5-4dcb-9844-ba9cb47e6308"
+Parent: "2b2ef8a6-34b2-4fe9-bfdb-ef55b8766be6"
+Template: "2b2ef8a6-34b2-4fe9-bfdb-ef55b8766be6"
+Path: /sitecore/templates/Project/cdpsitecore/PurchaseEvent/__Standard Values
 SharedFields:
-- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
-  Hint: __Masters
-  Value: |
-    {4B4AF3F4-87DF-478D-BBD9-2BC715C86ECD}
-    {2B2EF8A6-34B2-4FE9-BFDB-EF55B8766BE6}
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -19,11 +14,11 @@ SharedFields:
         <r
           id="{48F0FB59-9077-4425-A05B-5C7CA2512792}"
           ph="cdp-main"
-          uid="{3989CC3D-A5DD-4445-B8BD-A96EE62D98D7}" />
+          uid="{2AF923D5-60F9-4568-AFC3-FC02ECC6FC8B}" />
         <r
-          id="{530E13A2-C150-45D9-BC4A-DA269AA5CB48}"
+          id="{BA7D890F-4ACD-42B1-93A2-3BEDF256B9BF}"
           ph="cdp-main"
-          uid="{820D56F4-0FEF-42F8-8E9D-F48CFDE29BAD}" />
+          uid="{24251691-0F6A-4B54-B6E2-7663EDBC3DB8}" />
       </d>
     </r>
 Languages:
@@ -33,7 +28,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20221220T094748Z
+      Value: 20221221T081353Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -44,14 +39,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "65cfd0ab-c009-4a3a-a2f5-bdd972f32995"
+      Value: "567ae1df-3c62-4460-83f4-fe347c058055"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Admin
-    - ID: "c9706ac7-9363-4040-9743-aa59938d092f"
-      Hint: Heading
-      Value: $name
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20221221T084358Z
+      Value: 20221221T084438Z

@@ -1,0 +1,37 @@
+﻿---
+ID: "ef720546-dbfe-4ccc-a775-3aef79170da4"
+Parent: "2e5760a6-6df8-43f1-a5ef-2edf66f94185"
+Template: "2b2ef8a6-34b2-4fe9-bfdb-ef55b8766be6"
+Path: /sitecore/content/cdpsitecore/Home/CDPEvents/Product1
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Product 1
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221221T084457Z
+    - ID: "79f92ce1-4d1d-4ceb-9826-7bb36c466d7f"
+      Hint: ProductDescription
+      Value: <span>Dairy products or milk products, also known as lacticinia, are food products made from (or containing) milk. The most common dairy animals are cow, water buffalo, nanny goat, and ewe. Dairy products include common grocery store food items in the Western world such as yogurt, cheese and butter. A facility that produces dairy products is known as a dairy. Dairy products are consumed worldwide to varying degrees (see consumption patterns worldwide). Some people avoid some or all dairy products either because of lactose intolerance, veganism, or other health reasons or beliefs.</span>
+    - ID: "82eed051-14d0-48ab-9d8c-369ee2beba6e"
+      Hint: ProductTitle
+      Value: Milk Products
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "da9bbfbd-4696-4a1c-9af9-46ac28e7be35"
+    - ID: "9f480d27-4555-4374-85ac-c721abc95e44"
+      Hint: ProductImage
+      Value: |
+        <image mediaid="{8598A8F6-EB9D-4E5B-BE30-0FB9382347E7}" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20221221T085718Z

@@ -1,0 +1,16 @@
+﻿<div>
+    <div class="card">
+        @Html.Sitecore().Field("ProductImage")
+        <div class="card-body">
+            <h5 class="card-title">@Html.Sitecore().Field("ProductTitle")</h5>
+            <p class="card-text">@Html.Sitecore().Field("ProductDescription")</p>
+            <button id="btnAddToCart" type="button" class="btn btn-primary">Add To Cart</button>
+        </div>
+    </div>
+    <div style="text-align:center;">
+        <button id="btnDeleteFromCart" type="button" class="btn btn-danger">Delete From Cart</button>
+        <button id="btnOrderCompletion" type="button" class="btn btn-success">Order Complete</button>
+        <button id="btnPaymentCompleted" type="button" class="btn btn-warning">Payment Complete</button>
+        <button id="btnCheckOut" type="button" class="btn btn-success">CheckOut</button>
+    </div>
+</div>
