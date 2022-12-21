@@ -1,0 +1,44 @@
+﻿---
+ID: "7903910f-ba82-4394-8af8-844e725c2d88"
+Parent: "1147e60a-6abc-4a8f-af14-833361b559c0"
+Template: "4b4af3f4-87df-478d-bbd9-2bc715c86ecd"
+Path: /sitecore/content/cdpsitecore/Home/ProductsInformation
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Products Information
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221221T110941Z
+    - ID: "450cfc60-6408-45c6-8cb0-2c38ceafd5a8"
+      Hint: BriefInfo
+      Value: Product Information refers to any information held by an organisation about the products it produces, buys, sells or distributes. In the context of Product Information management (PIM), this typically refers to information relating to the selling and/or marketing of products via digital channels.
+    - ID: "51c62ac0-ed76-44cc-b23b-349e4e2b8129"
+      Hint: ContentMainImage
+      Value: |
+        <image mediaid="{2096D02F-2B94-4690-9F46-B7E92ED21916}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b2c03625-90d3-4b4d-9c8d-ef2cdd95d2ff"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c9706ac7-9363-4040-9743-aa59938d092f"
+      Hint: Heading
+      Value: Products Information
+    - ID: "cdec7c0d-816e-49eb-99b7-2043bb65f05a"
+      Hint: MainContent
+      Value: |
+        <p>In marketing, a product is an object, or system, or service made available for consumer use as of the consumer demand; it is anything that can be offered to a market to satisfy the desire or need of a customer. In retailing, products are often referred to as merchandise, and in manufacturing, products are bought as raw materials and then sold as finished goods. A service is also regarded as a type of product.</p>
+        <p>In project management, products are the formal definition of the project deliverables that make up or contribute to delivering the objectives of the project.</p>
+        <p>A related concept is that of a sub-product, a secondary but useful result of a production process.</p>
+        <p>Dangerous products, particularly physical ones, that cause injuries to consumers or bystanders may be subject to product liability.</p>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20221221T111724Z

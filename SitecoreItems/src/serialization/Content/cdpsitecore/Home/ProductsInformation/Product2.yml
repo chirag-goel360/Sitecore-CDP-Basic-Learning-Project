@@ -1,0 +1,37 @@
+﻿---
+ID: "e6c18707-9842-4ffc-9889-5e88a7595e24"
+Parent: "7903910f-ba82-4394-8af8-844e725c2d88"
+Template: "4681994d-7cbd-4e9c-8aec-4329a99bd3c3"
+Path: /sitecore/content/cdpsitecore/Home/ProductsInformation/Product2
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Product 2
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221221T111131Z
+    - ID: "331149f0-b0cd-4efb-8a4d-de2f64ac5f33"
+      Hint: ProductMainDescription
+      Value: "<span>Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant or store with frozen, preheated or precooked ingredients and served in packaging for take-out/take-away. Fast food was created as a commercial strategy to accommodate large numbers of busy commuters, travelers and wage workers. In 2018, the fast food industry was worth an estimated $570 billion globally.</span>"
+    - ID: "6d34a421-1ae2-48c7-9dd3-05269569ad7f"
+      Hint: ProductMainImage
+      Value: |
+        <image mediaid="{71B6F24E-40E5-4531-8582-EE36FA3761D2}" />
+    - ID: "6e61d720-a554-4b2e-958b-b65d4640f29e"
+      Hint: ProductMainTitle
+      Value: Fast Food
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "67dfc63b-0287-477f-bbcb-9395c00b47b1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20221221T111939Z

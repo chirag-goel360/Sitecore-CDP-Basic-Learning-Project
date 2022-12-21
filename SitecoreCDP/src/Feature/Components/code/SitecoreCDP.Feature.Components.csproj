@@ -258,6 +258,7 @@
   <ItemGroup>
     <Compile Include="Controllers\CDPIdentificationController.cs" />
     <Compile Include="Controllers\CDPNavigationController.cs" />
+    <Compile Include="Controllers\CDPProductController.cs" />
     <Compile Include="Controllers\PageContentController.cs" />
     <Compile Include="Controllers\PurchaseEventsController.cs" />
     <Compile Include="Models\MainLinkItems.cs" />
@@ -279,6 +280,7 @@
     <None Include="packages.config" />
     <Content Include="Views\PageContent\Index.cshtml" />
     <Content Include="Views\PurchaseEvents\Index.cshtml" />
+    <Content Include="Views\CDPProduct\Index.cshtml" />
     <None Include="web.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
