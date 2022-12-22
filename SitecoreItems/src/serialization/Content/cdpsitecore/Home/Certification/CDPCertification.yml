@@ -1,0 +1,122 @@
+﻿---
+ID: "b361a37a-1026-460e-a94c-78776cb7f8b2"
+Parent: "bf17c463-fb62-43c6-9b16-fab3d31ee712"
+Template: "4b4af3f4-87df-478d-bbd9-2bc715c86ecd"
+Path: /sitecore/content/cdpsitecore/Home/Certification/CDPCertification
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: CDP Certification
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221222T085053Z
+    - ID: "450cfc60-6408-45c6-8cb0-2c38ceafd5a8"
+      Hint: BriefInfo
+      Value: Sitecore CDP Exam
+    - ID: "51c62ac0-ed76-44cc-b23b-349e4e2b8129"
+      Hint: ContentMainImage
+      Value: |
+        <image mediaid="{726AD460-42FA-4FAE-A331-06F4396FA41B}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "46558da4-7a9b-437b-8c6d-76fda85cb357"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c9706ac7-9363-4040-9743-aa59938d092f"
+      Hint: Heading
+      Value: CDP Certification
+    - ID: "cdec7c0d-816e-49eb-99b7-2043bb65f05a"
+      Hint: MainContent
+      Value: |
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><strong><span style="background: white; color: red;"><span style="line-height: 107%;">Study Guide:</span> Sitecore CDP Certification Exam</span></strong></p>
+        <p style="background: white; margin-bottom: 0.0001pt; line-height: normal;"><span style="color: black;">Competency 1: Customer Data Platform</span></p>
+        <p style="background: white; margin-bottom: 0.0001pt; line-height: normal;"><span style="color: black;">Competency 2: Real-time Behavior Data Ingestion</span></p>
+        <p style="background: white; margin-bottom: 0.0001pt; line-height: normal;"><span style="color: black;">Competency 3: Interactive API</span></p>
+        <p style="background: white; margin-bottom: 0.0001pt; line-height: normal;"><span style="color: black;">Competency 4: Batch Data Ingestion</span></p>
+        <p style="background: white; margin-bottom: 0.0001pt; line-height: normal;"><span style="color: black;">Competency 5: Audience Sync and Batch Segments</span></p>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><strong><span style="padding: 0cm; border: 1pt none windowtext; color: black;">Guide: Competencies and resources for Sitecore CDP</span></strong></p>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><strong><span style="padding: 0cm; border: 1pt none windowtext; color: #ed7d31;">Competency 1: Customer Data Platform</span></strong></p>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: black;">To be certified in Sitecore CDP, a developer should be able to explain the major features and functions of Sitecore CDP. To meet this competency, you should be able to:</span></p>
+        <ul style="list-style-type: disc;">
+            <li><span style="color: black;">Describe the purpose of a Customer Data Platform</span></li>
+            <li><span style="color: black;">Describe a guest, data extension, session, event, order, and order item in Sitecore CDP, and identify the relationship between these entities</span></li>
+            <li><span style="color: black;">Explain how guest profiles are identified and merged in Sitecore CDP</span></li>
+            <li><span style="color: black;">Identify recommended practices for ensuring data privacy and protection, including authentication and cookies</span></li>
+            <li><span style="color: black;">Describe the information available about a guest in the guest profile and guest timeline</span></li>
+            <li><span style="color: black;">Identify all the data analysis capabilities in the platform</span></li>
+        </ul>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: black;">Resources:</span></p>
+        <ul style="list-style-type: disc;">
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-cdp/introduction-to-sitecore-cdp.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Introduction to Sitecore CDP</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-cdp/managing-guests-in-sitecore-cdp.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Managing guest profiles</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-cdp/understanding-sessions-and-events-in-sitecore-cdp.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Sessions and events</span></a></li>
+            <li><a href="https://doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/using-sitecore-cdp-data-lake-export-service.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Data lake export services<br />
+            </span></a></li>
+        </ul>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><strong><span style="color: #ed7d31;">Competency 2: Real-time Behavior Data Ingestions</span></strong></p>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: black;">To be certified in Sitecore CDP, a developer should be able to implement web tagging for real-time data ingestion using the Sitecore Javascript Library (boxever.js). To meet this competency, you should be able to:</span></p>
+        <ul style="list-style-type: disc;">
+            <li><span style="color: black;">Implement web tagging with Sitecore CDP (both client-side and server-side)</span></li>
+            <li><span style="color: black;">Send behavioral event data to Sitecore CDP in real-time through VIEW events</span></li>
+            <li><span style="color: black;">Configure IDENTITY events to resolve customer profiles</span></li>
+            <li><span style="color: black;">Capture the required events to create an order in the Sitecore CDP</span></li>
+        </ul>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: black;">Resources:</span></p>
+        <ul style="list-style-type: disc;">
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/integrating-with-sitecore-cdp.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Integrating with Sitecore CDP</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/overview-of-sitecore-cdp-stream-apis.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Sitecore CDP Stream APIs</span></a></li>
+            <li><a><span style="padding: 0cm; border: 1pt none windowtext;">Javascript library functions</span></a></li>
+            <li><a rel="noopener noreferrer" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Javascript tagging examples</span></a></li>
+            <li><a href="https://sitecore.cdpknowledgehub.com/docs/web-tagging-testing-and-troubleshooting" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Web tagging testing and troubleshooting<br />
+            </span></a></li>
+        </ul>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><strong><span style="color: #ed7d31;">Competency 3: Interactive API</span></strong></p>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: black;">To be certified in Sitecore CDP, a developer should be able to integrate the Sitecore CDP platform with other systems with data ingestion, interactive API, and order creation. To meet this competency, you should be able to:</span></p>
+        <ul style="list-style-type: disc;">
+            <li><span style="color: black;">Ingest data into the Sitecore CDP using the Interactive APIs </span></li>
+            <li><span style="color: black;">Add data extension to guests, orders, and order items using the Interactive APIs</span></li>
+        </ul>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: black;">Resources:</span></p>
+        <ul style="list-style-type: disc;">
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/overview-of-sitecore-cdp-rest-apis.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Sitecore CDP REST APIs</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/authentication-for-the-sitecore-cdp-rest-apis.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Authentication for REST APIs</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/sitecore-cdp-guest-data-model-functions-rest-api.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Guest data model functions</span></a></li>
+            <li><a href="https://doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/sitecore-cdp-guest-data-extension-model-functions-rest-api.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Guest data extension model functions<br />
+            </span></a></li>
+        </ul>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><strong><span style="color: #ed7d31;">Competency 4: Batch Data Ingestion</span></strong></p>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: black;">To be certified in Sitecore CDP, a developer should be able to ingest batch data on a regular scheduled basis from a data source using the batch APIs. To meet this competency, you should be able to:</span></p>
+        <ul style="list-style-type: disc;">
+            <li><span style="color: black;">Use the Batch API to upload a file of guest and order records into the Sitecore CDP</span></li>
+            <li><span style="color: black;">Configure data ingestion from offline systems</span></li>
+        </ul>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: #313537;">Resources:</span><span style="color: #313537;"></span></p>
+        <ul style="list-style-type: disc;">
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/overview-of-sitecore-cdp-batch-api.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Sitecore CDP Batch API</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/sitecore-cdp-guest-data-model-for-batch-api.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Guest model for Batch API</span></a></li>
+        </ul>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><strong><span style="color: #ed7d31;">Competency 5: Audience Sync and Batch Segments</span></strong></p>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: black;">To be certified in Sitecore CDP, a developer should be able to categorize the customer base using segmentation and export segments for regular email campaigns, paid media campaigns, and social campaigns using audience sync. To meet this competency, you should be able to:</span></p>
+        <ul style="list-style-type: disc;">
+            <li><span style="color: black;">Create segments for personalization, email campaigns, and analytics**</span></li>
+            <li><span style="color: black;">Create advanced segments using SQL</span></li>
+            <li><span style="color: black;">Export segments via audience sync for targeted audiences</span></li>
+            <li><span style="color: black;">Define export details for audience sync using FreeMarker</span></li>
+        </ul>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: black;">Resources:</span></p>
+        <ul style="list-style-type: disc;">
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-cdp/introduction-to-batch-segmentation.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Batch segmentation</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-cdp/create-and-add-rules-to-a-segment-in-sitecore-cdp.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Creating and adding rules</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-cdp/introduction-to-audience-sync.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Audience sync</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-cdp/introduction-to-audience-sync-templates-in-sitecore-cdp.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext;">Audience sync templates</span></a></li>
+        </ul>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20221222T113926Z

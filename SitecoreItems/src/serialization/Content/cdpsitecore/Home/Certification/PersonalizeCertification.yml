@@ -1,0 +1,113 @@
+﻿---
+ID: "1df57260-16a8-4afe-a554-3bad92785aac"
+Parent: "bf17c463-fb62-43c6-9b16-fab3d31ee712"
+Template: "4b4af3f4-87df-478d-bbd9-2bc715c86ecd"
+Path: /sitecore/content/cdpsitecore/Home/Certification/PersonalizeCertification
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Personalize Certification
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221222T084859Z
+    - ID: "450cfc60-6408-45c6-8cb0-2c38ceafd5a8"
+      Hint: BriefInfo
+      Value: Sitecore Personalize Exam
+    - ID: "51c62ac0-ed76-44cc-b23b-349e4e2b8129"
+      Hint: ContentMainImage
+      Value: |
+        <image mediaid="{C4617E24-3CAA-4F72-8BE1-4E19210F99D2}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f73e6aab-ed4e-4da5-92f0-af6bd25d5aba"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c9706ac7-9363-4040-9743-aa59938d092f"
+      Hint: Heading
+      Value: Personalize Certification
+    - ID: "cdec7c0d-816e-49eb-99b7-2043bb65f05a"
+      Hint: MainContent
+      Value: |
+        <p style="background: white; margin-bottom: 0.0001pt; line-height: normal;"><a href="https://learning.sitecore.com/learn/course/1068/study-guide-sitecore-personalize-certification-exam"><strong><span style="text-decoration: none; color: red;">Study Guide: Sitecore Personalize Certification Exam</span></strong></a></p>
+        <p style="background: white; margin-bottom: 0.0001pt; line-height: normal;"><strong><span style="padding: 0cm; border: 1pt none windowtext; color: #4472c4;">*Updated* Sitecore Personalize Certification Exam Study Guide</span></strong></p>
+        <p style="background: white; margin-bottom: 0.0001pt; line-height: normal;"><span style="color: black;">Competency 1: Real-time Behavioral Data Ingestion</span></p>
+        <p style="background: white; margin-bottom: 0.0001pt; line-height: normal;"><span style="color: black;">Competency 2: Experiences</span></p>
+        <p style="background: white; margin-bottom: 0.0001pt; line-height: normal;"><span style="color: black;">Competency 3: Experiments</span></p>
+        <p style="background: white; margin-bottom: 0.0001pt; line-height: normal;"><span style="color: black;">Competency 4: Decisioning</span></p>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><strong><span style="padding: 0cm; border: 1pt none windowtext; color: black;">Guide: Competencies and Resources for Sitecore Personalize</span></strong></p>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><strong><span style="color: #ed7d31;">Competency 1: Real-time Behavioral Data Ingestion</span></strong></p>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: black;">To be certified in Sitecore Personalize, a technical user should be able to implement web tagging for real-time data ingestion using the Sitecore Javascript Library (boxever.js). To meet this competency, you should be able to:</span></p>
+        <ul style="list-style-type: disc;">
+            <li><span style="color: black;">Web tagging with Sitecore Personalize (both client-side and server-side).</span></li>
+            <li><span style="color: black;">Send behavioral event data to Sitecore Personalize in real-time through VIEW events</span></li>
+            <li><span style="color: black;">Configure IDENTITY events to resolve customer profiles</span></li>
+            <li><span style="color: black;">Capture the required events to create an order in the Sitecore Personalize</span></li>
+        </ul>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: black;">Resources:</span></p>
+        <ul style="list-style-type: disc;">
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-personalize/understanding-sessions-and-events-in-sitecore-personalize.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext; color: blue;">Sessions and Events</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-personalize/targeting-audiences-in-a-web-experiment.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext; color: blue;">Targeting Audiences</span></a></li>
+        </ul>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><strong><span style="color: #ed7d31;">Competency 2: Experiences</span></strong></p>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: black;">To be certified in Sitecore Personalize, a technical user should be able to build full stack and web experiences to create personalized customer experiences across multiple channels (web, app, email, sms, etc.). To meet this competency, you should be able to:</span></p>
+        <ul style="list-style-type: disc;">
+            <li><span style="color: black;">Describe what a Sitecore personalized experience is</span></li>
+            <li><span style="color: black;">Describe the Sitecore Personalize Services and their respective uses via full stack and web experiences</span></li>
+            <li><span style="color: black;">Choose the right experiences for the solution by developing a solution design according to customer experience patterns</span></li>
+            <li><span style="color: black;">Create both triggered and interactive full stack experiences and identify when to use full stack experiences</span></li>
+            <li><span style="color: black;">Create web experiences using advanced edits</span></li>
+            <li><span style="color: black;">Create web experiences using templates</span></li>
+            <li><span style="color: black;">Create real-time audiences to target a specific audience base</span></li>
+            <li><span style="color: black;">Explain the limitation on the sessions that can be used for real-time audiences</span></li>
+            <li><span style="color: black;">Connect Sitecore Personalize to external destinations via Connections</span></li>
+            <li><span style="color: black;">Explain the different tools available in Sitecore Personalize for testing&mdash;including the QA tool and preview API</span></li>
+            <li><span style="color: black;">Identify potential operational errors&mdash;use operational tab and execution reports</span></li>
+        </ul>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: black;">Resources:</span></p>
+        <ul style="list-style-type: disc;">
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-personalize/introduction-to-sitecore-personalize.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext; color: blue;">Introduction to Sitecore Personalize</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-personalize/introduction-to-triggered-experiments-in-sitecore-personalize.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext; color: blue;">Create triggered experiences</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-personalize/introduction-to-interactive-experiments-in-sitecore-personalize.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext; color: blue;">Create interactive experiences</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-personalize/connecting-sitecore-personalize-to-an-external-system.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext; color: blue;">Connecting to external systems</span></a></li>
+        </ul>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><strong><span style="color: #ed7d31;">Competency 3: Experiments</span></strong></p>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: black;">To be certified in Sitecore Personalize, a technical user should be able to design an A/B test using an experiment. To meet this competency, you should be able to:</span></p>
+        <ul style="list-style-type: disc;">
+            <li><span style="color: black;">Describe the concept of experimentation in Sitecore Personalize</span></li>
+            <li><span style="color: black;">Explain how to split their audience between variants and how to handle multiple experiments running at the same time</span></li>
+            <li><span style="color: black;">Implement performance tests on customer experiences according to recommended practices</span></li>
+            <li><span style="color: black;">Update the sample size calculation on the experiment</span></li>
+            <li><span style="color: black;">Explain what impact multi-arm bandit (MAB) will have on your experiment.</span></li>
+        </ul>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: black;">Resources:</span></p>
+        <ul style="list-style-type: disc;">
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-personalize/introduction-to-web-experiments-in-sitecore-personalize.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext; color: blue;">Web experiments</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-personalize/preview-a-web-experiment.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext; color: blue;">Previewing web experiments</span></a></li>
+        </ul>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><strong><span style="color: #ed7d31;">Competency 4: Decisioning</span></strong></p>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: black;">To be certified in Personalize, a technical user should be able to build decision models to determine the personalization shown to customers including decision nodes, testing tools, connection data systems, and go live/versioning, decision canvas, and silent testing. To meet this competency, you should be able to:</span></p>
+        <ul style="list-style-type: disc;">
+            <li><span style="color: black;">Select the appropriate modules for implementing experiences&mdash;identify decision tables, data systems, offers, and programmable templates</span></li>
+            <li><span style="color: black;">Build programmable templates using JavaScript</span></li>
+            <li><span style="color: black;">Explain the different tools available in Sitecore Personalize for testing, including test canvas</span></li>
+            <li><span style="color: black;">Identify how version control works in Sitecore Personalize and what the states draft, paused, archived, test, and live mean</span></li>
+            <li><span style="color: black;">Explain the limitation on the sessions that can be used for decisioning</span></li>
+            <li><span style="color: black;">Set up connections, data systems, and AI</span></li>
+        </ul>
+        <p style="margin-bottom: 0.0001pt; line-height: normal;"><span style="padding: 0cm; border: 1pt none windowtext; color: black;">Resources:</span></p>
+        <ul style="list-style-type: disc;">
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-personalize/managing-decision-models-in-sitecore-personalize.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext; color: blue;">Managing decision models</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-personalize/managing-decision-model-variants-in-sitecore-personalize.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext; color: blue;">Decision model variants</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-personalize/managing-decision-tables-in-sitecore-personalize.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext; color: blue;">Decision tables</span></a></li>
+            <li><a rel="noopener noreferrer" href="https://doc.sitecore.com/cdp/en/users/sitecore-personalize/managing-programmable-decisions.html" target="_blank"><span style="padding: 0cm; border: 1pt none windowtext; color: blue;">Programmable decisions</span></a></li>
+        </ul>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20221222T113919Z

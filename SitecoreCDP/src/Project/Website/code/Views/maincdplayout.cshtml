@@ -294,6 +294,45 @@
             Boxever.eventCreate(identityInformation, function (data) { }, 'json');
             alert("Thank You: " + firstName + " " + lastName + "\nConfirmation will be sent to " + email);
         }
+
+        // ADD Event for Product to Cart
+        $(document).ready(
+            function () {
+                $("#btnAddToCart").click(
+                    function () {
+                        addProductToCart();
+                    }
+                );
+            }
+        );
+        // Follow Documentation --> doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/send-an-add-event-to-sitecore-cdp.html
+        function addProductToCart() {
+            var addProductEvent = {
+                "channel": "WEB",
+                "type": "ADD",
+                "language": "EN",
+                "currency": "USD",
+                "page": "/CDPEvents/Product1",
+                "pos": window._boxever_settings.pointOfSale,
+                "browser_id": Boxever.getID(),
+                "product": {
+                    "type": "Milk Products",
+                    "item_id": "ICE-CREAM-47",
+                    "name": "Ice Cream",
+                    "orderedAt": "2020-08-23T16:17",
+                    "quantity": 1,
+                    "price": 100.00,
+                    "productId": "ICE-CREAM",
+                    "currency": "USD",
+                    "originalPrice": 100.00,
+                    "originalCurrencyCode": "USD",
+                    "referenceId": "12"
+                }
+            };
+            Boxever.eventCreate(addProductEvent, function (data) {
+                alert(JSON.stringify(data));
+            }, 'json');
+        }
     </script>
 </body>
 </html>
