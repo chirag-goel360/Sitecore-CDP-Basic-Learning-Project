@@ -4,12 +4,12 @@
 	"items": {
 		"includes": [
 		{
-			"name": "Content",
-			"path": "/sitecore/content/cdpsitecore"
-		},
-		{
 			"name": "Templates",
 			"path": "/sitecore/templates/Project/cdpsitecore"
+		},
+		{
+			"name": "Content",
+			"path": "/sitecore/content/cdpsitecore"
 		},
 		{
 			"name": "Layout",
