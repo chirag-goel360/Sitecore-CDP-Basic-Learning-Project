@@ -1,0 +1,27 @@
+﻿---
+ID: "4c77a10c-6569-470b-bc8d-3c23578041e4"
+Parent: "f89d4174-a793-465a-a0f0-63e915e9e07a"
+Template: "017fa830-d954-405e-8618-f9ebc16f98ae"
+Path: /sitecore/content/cdpsitecore/Home/BasicLearning/CDPLearning
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: CDP Learning
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221222T054756Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "69489efb-7f0c-4453-bc76-6de83910a9b5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20221222T054904Z

@@ -53,7 +53,70 @@
     <script src="~/Scripts/smoothscroll.js"></script>
     <script src="~/Scripts/custom.js"></script>
     <script type="text/javascript">
+        // Get Browser ID
+        $(document).ready(
+            function () {
+                $("#btnBrowserID").click(
+                    function () {
+                        alert(Boxever.getID());
+                    }
+                );
+            }
+        );
 
+        // Send Default Identity
+        $(document).ready(
+            function () {
+                $("#btnDefaultIdentity").click(
+                    function () {
+                        sendDefaultIdentity();
+                    }
+                );
+            }
+        );
+        // Follow Documentation --> doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/send-an-identity-event-to-sitecore-cdp.html
+        function sendDefaultIdentity() {
+            var sentIdentity = {
+                "channel": "WEB",
+                "type": "IDENTITY",
+                "language": "EN",
+                "currency": "USD",
+                "page": "/BasicLearning/CDPLearning",
+                "pos": window._boxever_settings.pointOfSale,
+                "browser_id": Boxever.getID(),
+                "email": "chirag.goel@fakegmail.com",
+                "title": "Mr.",
+                "firstname": "Chirag",
+                "lastname": "Goel",
+                "gender": "male",
+                "identifiers": [
+                    {
+                        "provider": "MainEmail",
+                        "id": "123456"
+                    }
+                ]
+            }
+            Boxever.eventCreate(sentIdentity, function (data) { }, 'json');
+            alert("Identified Guest with Default Values");
+        }
+
+        // Get Guest ID
+        $(document).ready(
+            function () {
+                $("#btnGuestID").click(
+                    function () {
+                        getGuestID();
+                    }
+                );
+            }
+        );
+        // Follow Documentation --> sitecore.cdpknowledgehub.com/docs/web-tagging-javascript-library-functions
+        function getGuestID() {
+            Boxever.browserShow(Boxever.getID(), 0, function (response) {
+                var guestRefID = response.customer.ref;
+                alert(guestRefID);
+            }, 'json');
+        }
     </script>
 </body>
 </html>

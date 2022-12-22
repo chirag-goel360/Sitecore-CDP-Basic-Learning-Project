@@ -170,6 +170,7 @@
     <Content Include="Scripts\jquery.stellar.min.js" />
     <Content Include="Scripts\owl.carousel.min.js" />
     <Content Include="Scripts\smoothscroll.js" />
+    <Content Include="Views\cdplearnlayout.cshtml" />
     <Content Include="Views\maincdplayout.cshtml" />
     <None Include="web.config" />
     <None Include="web.Debug.config">
