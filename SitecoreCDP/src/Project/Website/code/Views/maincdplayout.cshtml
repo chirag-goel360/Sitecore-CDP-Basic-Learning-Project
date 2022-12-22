@@ -117,6 +117,128 @@
                 alert(guestRefID);
             }, 'json');
         }
+
+        // Close the Current Sesssion
+        $(document).ready(
+            function () {
+                $("#btnCloseSession").click(
+                    function () {
+                        closeTheSession();
+                    }
+                );
+            }
+        );
+        function closeTheSession() {
+            var closeCurrentSession = {
+                "browser_id": Boxever.getID(),
+                "channel": "WEB",
+                "language": "EN",
+                "currency": "USD",
+                "pos": window._boxever_settings.pointOfSale,
+                "type": "FORCE_CLOSE",
+                "_bx_extended_message": "1"
+            };
+            Boxever.eventCreate(closeCurrentSession, function (data) { }, 'json');
+            alert("Closing the Current Session");
+        }
+
+        // Normal Search Event
+        $(document).ready(
+            function () {
+                $("#btnSearchEvent").click(
+                    function () {
+                        normalSearchEvent();
+                    }
+                );
+            }
+        );
+        // Follow Documentation --> doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/send-a-search-event-to-sitecore-cdp.html
+        function normalSearchEvent() {
+            var sendSearchEvent = {
+                "channel": "WEB",
+                "type": "SEARCH",
+                "language": "EN",
+                "currency": "USD",
+                "page": "/SearchPage",
+                "pos": window._boxever_settings.pointOfSale,
+                "browser_id": Boxever.getID(),
+                "product_name": "Cheese",
+                "product_type": "Milk Products"
+            };
+            Boxever.eventCreate(sendSearchEvent, function (data) {
+                alert(JSON.stringify(data));
+            }, 'json');
+        }
+
+        // Flight Search Event using Push
+        $(document).ready(
+            function () {
+                $("#btnSearchFlightEventPush").click(
+                    function () {
+                        flightSearchEvent();
+                    }
+                );
+            }
+        );
+        // Follow Documentation --> doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/send-a-search-event-for-flight-to-sitecore-cdp.html
+        function flightSearchEvent() {
+            _boxeverq.push(
+                function () {
+                    var sendFlightEvent = {
+                        "channel": "WEB",
+                        "type": "SEARCH",
+                        "language": "EN",
+                        "currency": "USD",
+                        "page": "/SearchPage",
+                        "pos": window._boxever_settings.pointOfSale,
+                        "browser_id": Boxever.getID(),
+                        "product_name": "F-22",
+                        "product_type": "Lockheed Martin Raptor",
+                        "flight_type": "Fighter",
+                        "origin": "IND",
+                        "destination": "USA",
+                        "start": "2022-12-20T00:00",
+                        "end": "2022-12-22T00:00",
+                        "adults": 1,
+                        "children": 0,
+                        "infants": 0,
+                        "fare_class": "Fighter"
+                    }
+                    Boxever.eventCreate(sendFlightEvent, function (data) {
+                        alert(JSON.stringify(data));
+                    }, 'json');
+                }
+            );
+        }
+
+        // Search Event using XML HTTP
+        $(document).ready(
+            function () {
+                $("#btnSearchEventHTTP").click(
+                    function () {
+                        searchEventXmlHTTP();
+                    }
+                );
+            }
+        );
+        function searchEventXmlHTTP() {
+            var XMLHttp = new XMLHttpRequest();
+            var searchEvent = {
+                "channel": "WEB",
+                "type": "SEARCH",
+                "language": "EN",
+                "currency": "USD",
+                "page": "/SearchPage",
+                "pos": window._boxever_settings.pointOfSale,
+                "browser_id": Boxever.getID(),
+                "product_name": "Pizza",
+                "product_type": "Fast Food"
+            };
+            var url = "@SitecoreCDP.Project.Website.Constants.targetEndPoint" + '/event/create.json?client_key=' + "@SitecoreCDP.Project.Website.Constants.client_key" + '&boxever_version=' + "@SitecoreCDP.Project.Website.Constants.javascriptLibraryVersion" + '&message=' + JSON.stringify(searchEvent, null);
+            XMLHttp.open("GET", url, false);
+            XMLHttp.send(null);
+            alert(JSON.stringify(XMLHttp.responseText));
+        }
     </script>
 </body>
 </html>
