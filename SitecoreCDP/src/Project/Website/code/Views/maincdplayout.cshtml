@@ -239,6 +239,61 @@
             XMLHttp.send(null);
             alert(JSON.stringify(XMLHttp.responseText));
         }
+
+        // Send Person Identity
+        $(document).ready(
+            function () {
+                $("#btnSubmitIdentityForm").click(
+                    function () {
+                        sendPersonIdentity();
+                    }
+                );
+            }
+        );
+        // Follow Documentation --> doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/send-an-identity-event-to-sitecore-cdp.html
+        function sendPersonIdentity() {
+            var firstName = document.getElementById("textFirstName").value;
+            var lastName = document.getElementById("textLastName").value;
+            var gender = document.getElementById("textGender").value;
+            var nationality = document.getElementById("textNationality").value;
+            var dateOfBirth = document.getElementById("textDOB").value;
+            var email = document.getElementById("textEmail").value;
+            var phoneNumber = document.getElementById("textPhoneNo").value;
+            var title;
+            if (gender.toUpperCase() == "MALE") {
+                title = "Mr";
+            }
+            else if (gender.toUpperCase() == "FEMALE") {
+                title = "Ms";
+            }
+            else {
+                title = "General";
+            }
+            var identityInformation = {
+                "channel": "WEB",
+                "type": "IDENTITY",
+                "language": "EN",
+                "currency": "USD",
+                "page": "/PeopleIdentify/PersonIdentification",
+                "pos": window._boxever_settings.pointOfSale,
+                "browser_id": Boxever.getID(),
+                "email": email,
+                "title": title,
+                "firstname": firstName,
+                "lastname": lastName,
+                "gender": gender.toLowerCase(),
+                "dob": dateOfBirth,
+                "mobile": phoneNumber,
+                "identifiers": [
+                    {
+                        "provider": "MainEmail",
+                        "id": email
+                    }
+                ]
+            };
+            Boxever.eventCreate(identityInformation, function (data) { }, 'json');
+            alert("Thank You: " + firstName + " " + lastName + "\nConfirmation will be sent to " + email);
+        }
     </script>
 </body>
 </html>

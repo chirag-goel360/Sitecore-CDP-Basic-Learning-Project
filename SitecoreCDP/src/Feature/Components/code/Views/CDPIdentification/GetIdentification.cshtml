@@ -4,8 +4,12 @@
 {
 <div>
     <div class="mb-3">
-        <label for="@Model.FullName" class="form-label">Full Name</label>
-        <input type="text" id="textFullName" class="form-control" value="@Model.FullName">
+        <label for="@Model.FirstName" class="form-label">First Name</label>
+        <input type="text" id="textFirstName" class="form-control" value="@Model.FirstName">
+    </div>
+    <div class="mb-3">
+        <label for="@Model.LastName" class="form-label">Last Name</label>
+        <input type="text" id="textLastName" class="form-control" value="@Model.LastName">
     </div>
     <div class="mb-3">
         <label for="@Model.Gender" class="form-label">Gender</label>
@@ -17,7 +21,7 @@
     </div>
     <div class="mb-3">
         <label for="@Model.DOB" class="form-label">Date of Birth</label>
-        <input type="text" id="textDOB" class="form-control" value="@Model.DOB">
+        <input type="text" id="textDOB" class="form-control" value="@Model.DOB" placeholder="Format YYYY-MM-DDTHH:MM">
     </div>
     <div class="mb-3">
         <label for="@Model.Email" class="form-label">Email</label>
