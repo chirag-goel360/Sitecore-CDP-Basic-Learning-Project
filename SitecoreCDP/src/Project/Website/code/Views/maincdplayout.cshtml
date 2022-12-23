@@ -305,6 +305,15 @@
                 );
             }
         );
+        $(document).ready(
+            function () {
+                $("#btnAddProductToCart").click(
+                    function () {
+                        addProductToCart();
+                    }
+                );
+            }
+        );
         // Follow Documentation --> doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/send-an-add-event-to-sitecore-cdp.html
         function addProductToCart() {
             var addProductEvent = {
@@ -316,13 +325,13 @@
                 "pos": window._boxever_settings.pointOfSale,
                 "browser_id": Boxever.getID(),
                 "product": {
-                    "type": "Milk Products",
-                    "item_id": "ICE-CREAM-47",
-                    "name": "Ice Cream",
+                    "type": "Food Products",
+                    "item_id": document.getElementById("ProductTitle").innerHTML,
+                    "name": document.getElementById("ProductTitle").innerHTML,
                     "orderedAt": "2020-08-23T16:17",
                     "quantity": 1,
                     "price": 100.00,
-                    "productId": "ICE-CREAM",
+                    "productId": document.getElementById("ProductTitle").innerHTML,
                     "currency": "USD",
                     "originalPrice": 100.00,
                     "originalCurrencyCode": "USD",
@@ -549,6 +558,107 @@
                     }, 'json');
                 }
             );
+        }
+
+        // CONFIRM Event for Product
+        $(document).ready(
+            function () {
+                $("#btnConfirmProductInCart").click(
+                    function () {
+                        confirmEventProduct();
+                    }
+                );
+            }
+        );
+        // Follow Documentation --> doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/send-a-confirm-event-to-sitecore-cdp.html
+        function confirmEventProduct() {
+            _boxeverq.push(
+                function () {
+                    var confirmProductCart = {
+                        "channel": "WEB",
+                        "type": "CONFIRM",
+                        "language": "EN",
+                        "currency": "USD",
+                        "page": window.location.href,
+                        "pos": window._boxever_settings.pointOfSale,
+                        "browser_id": Boxever.getID(),
+                        "product": [
+                            {
+                                "item_id": "Milk Product"
+                            },
+                            {
+                                "item_id": "Fast Foods"
+                            }
+                        ]
+                    };
+                    Boxever.eventCreate(confirmProductCart, function (data) {
+                        alert(JSON.stringify(data));
+                    }, 'json');
+                }
+            );
+        }
+
+        // ORDER_CHECKOUT Event for Product
+        $(document).ready(
+            function () {
+                $("#btnOrderCompletion").click(
+                    function () {
+                        orderCheckoutForProduct();
+                    }
+                );
+            }
+        );
+        // Follow Documentation --> doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/send-an-order-checkout-event-to-sitecore-cdp.html
+        function orderCheckoutForProduct() {
+            var currentDate = new Date();
+            var dateISO = currentDate.toISOString();
+            var orderCheckoutEvent = {
+                "type": "ORDER_CHECKOUT",
+                "browser_id": Boxever.getID(),
+                "channel": "WEB",
+                "pos": window._boxever_settings.pointOfSale,
+                "language": "EN",
+                "currency": "USD",
+                "page": window.location.href,
+                "order": {
+                    "referenceId": "134",
+                    "orderedAt": dateISO,
+                    "status": "PURCHASED",
+                    "currencyCode": "USD",
+                    "price": 200,
+                    "paymentType": "Card",
+                    "cardType": "Visa",
+                    "extensions": [
+                        {
+                            "name": "ext",
+                            "key": "default",
+                            "refundable": false
+                        }
+                    ],
+                    "orderItems": [
+                        {
+                            "type": "FOOD_PRODUCT",
+                            "referenceId": "RF121",
+                            "status": "PURCHASED",
+                            "currencyCode": "USD",
+                            "price": 200,
+                            "name": document.getElementById("ProductTitle").innerHTML,
+                            "productId": document.getElementById("ProductTitle").innerHTML,
+                            "quantity": 1,
+                            "extensions": [
+                                {
+                                    "name": "ext",
+                                    "key": "default",
+                                    "insurance": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            };
+            Boxever.eventCreate(orderCheckoutEvent, function (data) {
+                alert(JSON.stringify(data));
+            }, 'json');
         }
     </script>
 </body>

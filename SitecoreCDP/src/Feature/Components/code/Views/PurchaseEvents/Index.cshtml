@@ -2,7 +2,7 @@
     <div class="card">
         @Html.Sitecore().Field("ProductImage")
         <div class="card-body">
-            <h5 class="card-title">@Html.Sitecore().Field("ProductTitle")</h5>
+            <h5 class="card-title" id="ProductTitle">@Html.Sitecore().Field("ProductTitle")</h5>
             <p class="card-text">@Html.Sitecore().Field("ProductDescription")</p>
             <button id="btnAddToCart" type="button" class="btn btn-primary">Add To Cart</button>
         </div>
