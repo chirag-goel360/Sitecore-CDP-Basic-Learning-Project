@@ -81,7 +81,7 @@
                 "type": "IDENTITY",
                 "language": "EN",
                 "currency": "USD",
-                "page": "/BasicLearning/CDPLearning",
+                "page": window.location.href,
                 "pos": window._boxever_settings.pointOfSale,
                 "browser_id": Boxever.getID(),
                 "email": "chirag.goel@fakegmail.com",
@@ -159,7 +159,7 @@
                 "type": "SEARCH",
                 "language": "EN",
                 "currency": "USD",
-                "page": "/SearchPage",
+                "page": window.location.href,
                 "pos": window._boxever_settings.pointOfSale,
                 "browser_id": Boxever.getID(),
                 "product_name": "Cheese",
@@ -189,7 +189,7 @@
                         "type": "SEARCH",
                         "language": "EN",
                         "currency": "USD",
-                        "page": "/SearchPage",
+                        "page": window.location.href,
                         "pos": window._boxever_settings.pointOfSale,
                         "browser_id": Boxever.getID(),
                         "product_name": "F-22",
@@ -228,7 +228,7 @@
                 "type": "SEARCH",
                 "language": "EN",
                 "currency": "USD",
-                "page": "/SearchPage",
+                "page": window.location.href,
                 "pos": window._boxever_settings.pointOfSale,
                 "browser_id": Boxever.getID(),
                 "product_name": "Pizza",
@@ -274,7 +274,7 @@
                 "type": "IDENTITY",
                 "language": "EN",
                 "currency": "USD",
-                "page": "/PeopleIdentify/PersonIdentification",
+                "page": window.location.href,
                 "pos": window._boxever_settings.pointOfSale,
                 "browser_id": Boxever.getID(),
                 "email": email,
@@ -312,7 +312,7 @@
                 "type": "ADD",
                 "language": "EN",
                 "currency": "USD",
-                "page": "/CDPEvents/Product1",
+                "page": window.location.href,
                 "pos": window._boxever_settings.pointOfSale,
                 "browser_id": Boxever.getID(),
                 "product": {
@@ -330,6 +330,87 @@
                 }
             };
             Boxever.eventCreate(addProductEvent, function (data) {
+                alert(JSON.stringify(data));
+            }, 'json');
+        }
+
+        // CHECKOUT Event for Success Add to Cart
+        $(document).ready(
+            function () {
+                $("#btnCheckOut").click(
+                    function () {
+                        cartCheckoutEvent();
+                    }
+                );
+            }
+        );
+        // Follow Documentation --> doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/send-a-checkout-event-to-sitecore-cdp.html
+        function cartCheckoutEvent() {
+            var checkOutEvent = {
+                "channel": "WEB",
+                "type": "CHECKOUT",
+                "language": "EN",
+                "currency": "USD",
+                "page": window.location.href,
+                "pos": window._boxever_settings.pointOfSale,
+                "browser_id": Boxever.getID(),
+                "reference_id": "MK1214",
+                "status": "PAYMENT_PENDING"
+            };
+            Boxever.eventCreate(checkOutEvent, function (data) {
+                alert(JSON.stringify(data));
+            }, 'json');
+        }
+
+        // CLEAR_CART Event for Remove from Cart
+        $(document).ready(
+            function () {
+                $("#btnDeleteFromCart").click(
+                    function () {
+                        cartClearEvent();
+                    }
+                );
+            }
+        );
+        // Follow Documentation --> doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/send-a-clear-cart-event-to-sitecore-cdp.html
+        function cartClearEvent() {
+            var clearCartEvent = {
+                "channel": "WEB",
+                "type": "CLEAR_CART",
+                "language": "EN",
+                "currency": "USD",
+                "page": window.location.href,
+                "pos": window._boxever_settings.pointOfSale,
+                "browser_id": Boxever.getID()
+            };
+            Boxever.eventCreate(clearCartEvent, function (data) {
+                alert(JSON.stringify(data));
+            }, 'json');
+        }
+
+        // Adding a PAYMENT Event
+        $(document).ready(
+            function () {
+                $("#btnPaymentCompleted").click(
+                    function () {
+                        eventForPayment();
+                    }
+                );
+            }
+        );
+        // Follow Documentation --> doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/send-a-payment-event-to-sitecore-cdp.html
+        function eventForPayment() {
+            var paymentEvent = {
+                "channel": "WEB",
+                "type": "PAYMENT",
+                "language": "EN",
+                "currency": "USD",
+                "page": window.location.href,
+                "pos": window._boxever_settings.pointOfSale,
+                "browser_id": Boxever.getID(),
+                "pay_type": "Card"
+            };
+            Boxever.eventCreate(paymentEvent, function (data) {
                 alert(JSON.stringify(data));
             }, 'json');
         }
