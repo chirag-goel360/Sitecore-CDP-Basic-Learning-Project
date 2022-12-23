@@ -414,6 +414,142 @@
                 alert(JSON.stringify(data));
             }, 'json');
         }
+
+        // CHECKOUT Event for Success Add to Cart
+        $(document).ready(
+            function () {
+                $("#btnCheckOutAfterPayment").click(
+                    function () {
+                        cartPurchaseCheckoutEvent();
+                    }
+                );
+            }
+        );
+        // Follow Documentation --> doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/send-a-checkout-event-to-sitecore-cdp.html
+        function cartPurchaseCheckoutEvent() {
+            _boxeverq.push(
+                function () {
+                    var checkoutAfterPayment = {
+                        "channel": "WEB",
+                        "type": "CHECKOUT",
+                        "language": "EN",
+                        "currency": "USD",
+                        "page": window.location.href,
+                        "pos": window._boxever_settings.pointOfSale,
+                        "browser_id": Boxever.getID(),
+                        "reference_id": "AC123",
+                        "status": "PURCHASED"
+                    };
+                    Boxever.eventCreate(checkoutAfterPayment, function (data) {
+                        alert(JSON.stringify(data));
+                    }, 'json');
+                }
+            );
+        }
+
+        // Adding CONSUMERS and CONTACTS Event with Payment
+        $(document).ready(
+            function () {
+                $("#btnMakePayment").click(
+                    function () {
+                        eventForPaymentWithContactsAndConsumers();
+                    }
+                );
+            }
+        );
+        // Follow Documentation --> doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-0/send-an-add-consumers-event-to-sitecore-cdp.html
+        // Follow Documentation --> doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-0/send-an-add-contacts-event-to-sitecore-cdp.html
+        async function addingConsumers() {
+            _boxeverq.push(
+                function () {
+                    var consumersData = {
+                        "channel": "WEB",
+                        "type": "ADD_CONSUMERS",
+                        "language": "EN",
+                        "currency": "USD",
+                        "page": window.location.href,
+                        "pos": window._boxever_settings.pointOfSale,
+                        "browser_id": Boxever.getID(),
+                        "consumer": [
+                            {
+                                "title": "Mr",
+                                "firstname": "Jack",
+                                "lastname": "Sparrow",
+                                "reference_id": "1",
+                            },
+                            {
+                                "title": "Dr",
+                                "firstname": "Jackson",
+                                "lastname": "Smith",
+                                "gender": "male",
+                                "reference_id": "2",
+                                "item_id": [
+                                    "Fast Foods",
+                                    "Pizza",
+                                    "Coke"
+                                ]
+                            }
+                        ]
+                    };
+                    Boxever.eventCreate(consumersData, function (data) {
+                        console.log(JSON.stringify(data));
+                    }, 'json');
+                }
+            );
+        }
+        async function addingContacts() {
+            _boxeverq.push(
+                function () {
+                    var contactsData = {
+                        "channel": "WEB",
+                        "type": "ADD_CONTACTS",
+                        "language": "EN",
+                        "currency": "USD",
+                        "page": window.location.href,
+                        "pos": window._boxever_settings.pointOfSale,
+                        "browser_id": Boxever.getID(),
+                        "contact": [
+                            {
+                                "title": "Mr",
+                                "firstname": "Jack",
+                                "lastname": "Sparrow",
+                                "email": "jack.sparrow@fakemail.com",
+                                identifiers: [
+                                    {
+                                        "provider": "MainEmail",
+                                        "id": "123456"
+                                    }
+                                ],
+                            }
+                        ]
+                    };
+                    Boxever.eventCreate(contactsData, function (data) {
+                        console.log(JSON.stringify(data));
+                    }, 'json');
+                }
+            );
+        }
+        async function eventForPaymentWithContactsAndConsumers() {
+            await addingContacts();
+            await addingConsumers();
+            _boxeverq.push(
+                function () {
+                    var productCartToConfirm = {
+                        "channel": "WEB",
+                        "type": "PAYMENT",
+                        "language": "EN",
+                        "currency": "USD",
+                        "page": window.location.href,
+                        "pos": window._boxever_settings.pointOfSale,
+                        "browser_id": Boxever.getID(),
+                        "pay_type": "Card"
+                    };
+                    Boxever.eventCreate(productCartToConfirm, function (data) {
+                        alert(JSON.stringify(data));
+                    }, 'json');
+                }
+            );
+        }
     </script>
 </body>
 </html>
