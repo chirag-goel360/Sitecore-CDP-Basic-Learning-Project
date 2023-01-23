@@ -12,5 +12,6 @@ namespace SitecoreCDP.Project.Website
         public const string cookieDomain = ".sitecorecdp.dev.local";
         public const string javascriptLibraryVersion = "1.4.9";
         public const string pointOfSale = "YOUR_POINTS_OF_SALE";
+        public const string client_secret = "YOUR_ORGANISATION_CLIENT_SECRET";
     }
 }
